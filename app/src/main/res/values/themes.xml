@@ -12,5 +12,12 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+        <item name="materialButtonStyle">@style/Theme.MyApp.Button</item>
+    </style>
+
+    <style name="Theme.MyApp.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">24dp</item>
+        <item name="backgroundTint">@color/my_red</item>
     </style>
 </resources>
