@@ -17,7 +17,8 @@
     </style>
 
     <style name="Theme.MyApp.Button" parent="Widget.MaterialComponents.Button">
-        <item name="android:textSize">24dp</item>
+        <item name="android:textSize">24sp</item>
         <item name="backgroundTint">@color/my_red</item>
+        <item name="android:layout_margin">10sp</item>
     </style>
 </resources>
