@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">MyFirstApp</string>
     <string name="name_one">Привет Сергей!</string>
-    <string name="Btn001">Кнопка</string>
-    <string name="fbfdbfdbdfb">fbfdbfdbdfb</string>
+    <string name="Btn">button</string>
+    <string name="show_snackbar">show snackbar</string>
 </resources>

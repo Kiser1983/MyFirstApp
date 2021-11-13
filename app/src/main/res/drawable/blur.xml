@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:drawable="@color/my_layer"/>
+
+    <item>
+        <shape android:shape="rectangle">
+
+            <solid
+                android:color="#80FFFFFF"/>  <!-- Here transparency level is 80%-->
+        </shape>
+    </item>
+</layer-list>

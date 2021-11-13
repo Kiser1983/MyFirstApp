@@ -9,4 +9,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="White2">#FFFFFFF0</color>
     <color name="my_red">#FF0000</color>
+    <color name="my_blue">#4E00FF</color>
+    <color name="my_background">#e5eec3</color>
+    <color name="my_layer">#D5E0A8</color>
+    <color name="my_button">#616200</color>
+    <color name="my_text">#f6ee44</color>
+<color name="my_text_version_two">#558B2F</color>
 </resources>
