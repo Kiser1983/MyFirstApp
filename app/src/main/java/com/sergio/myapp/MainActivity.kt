@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+
+
     private fun showSckbar(view: View) {
         Snackbar.make(this, view, "Snackbar show", Snackbar.LENGTH_INDEFINITE)
             .setAction("Action") {

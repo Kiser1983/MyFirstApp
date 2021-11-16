@@ -5,11 +5,103 @@
     android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/my_background"
-    android:orientation="vertical">
+    android:background="@color/my_layer"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+          android:orientation="vertical"
+          android:gravity="top">
+
+          <Button
+
+              style="@style/Theme.MyApp.Button.Strong"
+              android:id="@+id/button1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginHorizontal="10sp"
+              android:layout_gravity="center"
+              android:text="@string/Btn" />
+
+          <Button
+              style="Theme.MyApp.Button.Color"
+              android:id="@+id/show_button"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginHorizontal="10sp"
+              android:layout_gravity="center"
+              android:text="@string/show_snackbar"/>
+
+      </LinearLayout>
+
+      <LinearLayout
 
 
+          android:layout_width="match_parent"
+          android:layout_height="400dp"
+          android:layout_weight="1"
+          android:orientation="horizontal">
 
+          <TextView
+
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:textAlignment="center"
+              android:background="@color/my_red"
+              android:text=" red  "/>
+
+          <TextView
+
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:textAlignment="center"
+              android:background="#00aa00"
+              android:text=" green"/>
+
+          <TextView
+              style="@style/Theme.MyApp.TextVieW.Bold"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:textAlignment="center"
+              android:background="#0000aa"
+              android:text=" blue "/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:background="#aaaa00"
+              android:text="yellow"
+              android:textAlignment="center" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:orientation="horizontal">
+
+          <TextView
+              style="@style/Theme.MyApp.TextVieW.Size"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:text="Lorem Ipsum - это текст-рыба, часто используемый в печати и вэб-дизайне.
+              Lorem Ipsum является стандартной рыбой для текстов на латинице с начала XVI века.
+  "
+              android:textAlignment="center" />
+
+      </LinearLayout>
+
+
+<!--
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,11 +117,28 @@
             android:background="@drawable/my_btn_style"
             android:text="@string/show_snackbar"/>
 
+        <Button
+            android:id="@+id/show_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10sp"
+            android:background="@drawable/my_btn_style"
+            android:text="@string/show_snackbar"/>
+
     </RelativeLayout>
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_centerInParent="true"
+            android:text="Text  Text Text Text"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -38,120 +147,31 @@
             android:layout_centerInParent="true"
             android:text="Text  Text Text Text"/>
 
+    </LinearLayout>
+-->
+
+<!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:paddingBottom="@dimen/cardview_default_elevation">
+
+        <Button
+            android:id="@+id/show_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10sp"
+            android:background="@drawable/my_btn_style"
+            android:text="@string/show_snackbar"/>
+
+
     </RelativeLayout>
+-->
+
 </LinearLayout>
 
 
     <!-- android:background="@drawable/button_drawable" -->
 
-    <!--  <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:orientation="horizontal">
-
-          <Button
-              android:id="@+id/button1"
-              style="@style/Theme.MyApp.Button.Strong"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:layout_marginHorizontal="10sp"
-              android:layout_weight="1"
-              android:text="@string/Btn" />
-
-          <Button
-              android:id="@+id/button2"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:layout_marginHorizontal="10sp"
-              android:layout_weight="1"
-              android:text="@string/Btn" />
-
-      </LinearLayout>
-
-      <RelativeLayout
-          android:id="@+id/RelativeLayout01"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content">
-
-          <Button
-              android:id="@+id/show_button"
-              style="@style/Theme.MyApp.Button.Strong"
-
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:layout_centerInParent="true"
-              android:text="@string/show_snackbar"/>
-      </RelativeLayout>
-
-
-
-
-      <LinearLayout
-
-
-          android:layout_width="match_parent"
-          android:layout_height="400dp"
-          android:layout_weight="1"
-          android:orientation="horizontal">
-
-          <TextView
-              style="@style/Theme.MyApp.TextVieW"
-
-              android:layout_width="wrap_content"
-              android:layout_height="match_parent"
-              android:layout_weight="1"
-              android:textAlignment="center"
-              android:background="@color/my_red"
-              android:text=" red  "/>
-
-          <TextView
-              style="@style/Theme.MyApp.TextVieW"
-
-              android:layout_width="wrap_content"
-              android:layout_height="match_parent"
-              android:layout_weight="1"
-              android:textAlignment="center"
-              android:background="#00aa00"
-              android:text=" green"/>
-
-          <TextView
-              style="@style/Theme.MyApp.TextVieW"
-
-              android:layout_width="wrap_content"
-              android:layout_height="match_parent"
-              android:layout_weight="1"
-              android:textColor="@color/purple_200"
-              android:textAlignment="center"
-              android:background="#0000aa"
-              android:text=" blue "/>
-
-          <TextView
-              style="@style/Theme.MyApp.TextVieW"
-
-              android:layout_width="wrap_content"
-              android:layout_height="match_parent"
-              android:layout_weight="1"
-              android:background="#aaaa00"
-              android:text="yellow"
-              android:textAlignment="center"
-              android:textColor="#6D4C41" />
-
-      </LinearLayout>
-
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:orientation="horizontal">
-
-          <TextView
-              style="@style/Theme.MyApp.TextVieW.Size"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="Lorem Ipsum - это текст-рыба, часто используемый в печати и вэб-дизайне.
-              Lorem Ipsum является стандартной рыбой для текстов на латинице с начала XVI века.
-  "
-              android:textAlignment="center" />
-
-      </LinearLayout>-->
